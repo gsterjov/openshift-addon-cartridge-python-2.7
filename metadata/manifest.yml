@@ -1,14 +1,13 @@
 Name: python-2.7
-Display-Name: Python 2.7 Community Cartridge
-Description: "Community supported Python 2.7 cartridge. See the community site for examples of bringing your cartridge to OpenShift. Python is a general-purpose, high-level programming language whose design philosophy emphasizes code readability. Popular development frameworks include: Django, Bottle, Pylons, Zope and TurboGears."
-Version: 1.0.0
+Display-Name: Python 2.7 Addon Cartridge
+Description: "Python 2.7 addon cartridge. Python is a general-purpose, high-level programming language whose design philosophy emphasizes code readability. Popular development frameworks include: Django, Bottle, Pylons, Zope and TurboGears."
+Version: 0.0.1
 License: "ASL 2.0"
 License-Url: http://www.apache.org/licenses/LICENSE-2.0.txt
 Vendor:
 Categories:
   - service
   - python
-  - web_framework
   - community
 Website: "http://www.python.org"
 Help-Topics:
@@ -48,7 +47,6 @@ Cart-Data:
 Suggests:
 Provides:
   - "python-2.7"
-  - "wsgi"
 Requires:
 Conflicts:
 Native-Requires:
@@ -65,14 +63,9 @@ Native-Requires:
 Architecture: noarch
 Reservations:
   - MEM >= 100MB
-Start-Order: wsgi
 Publishes:
   get-doc-root:
     Type: "FILESYSTEM:doc-root"
-  publish-http-url:
-    Type: "NET_TCP:httpd-proxy-info"
-  publish-gear-endpoint:
-    Type: "NET_TCP:gear-endpoint-info"
 Subscribes:
   set-db-connection-info:
     Type: "NET_TCP:db:connection-info"
@@ -95,7 +88,3 @@ Scaling:
 Group-Overrides:
   - components:
     - python-2.7
-    - web_proxy
-Endpoints:
-  - PROXY_PORT: 8080
-
