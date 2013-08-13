@@ -1,10 +1,12 @@
 Name: python-2.7
+Cartridge-Short-Name: PYTHON
 Display-Name: Python 2.7 Addon Cartridge
 Description: "Python 2.7 addon cartridge. Python is a general-purpose, high-level programming language whose design philosophy emphasizes code readability. Popular development frameworks include: Django, Bottle, Pylons, Zope and TurboGears."
-Version: 0.0.1
+Version: 2.7
 License: "ASL 2.0"
 License-Url: http://www.apache.org/licenses/LICENSE-2.0.txt
-Vendor:
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: gsterjov
 Categories:
   - service
   - python
