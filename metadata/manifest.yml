@@ -1,4 +1,4 @@
-Name: python-2.7
+Name: python
 Cartridge-Short-Name: PYTHON
 Display-Name: Python 2.7 Addon Cartridge
 Description: "Python 2.7 addon cartridge. Python is a general-purpose, high-level programming language whose design philosophy emphasizes code readability. Popular development frameworks include: Django, Bottle, Pylons, Zope and TurboGears."
@@ -48,7 +48,7 @@ Cart-Data:
     Description: "Unique ID which identified the gear. This value changes between gears."
 Suggests:
 Provides:
-  - "python-2.7"
+  - "python"
 Requires:
 Conflicts:
 Native-Requires:
@@ -89,4 +89,4 @@ Scaling:
   Max: -1
 Group-Overrides:
   - components:
-    - python-2.7
+    - python

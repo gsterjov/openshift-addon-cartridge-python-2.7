@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cartridge_type="python-2.7"
+cartridge_type="python"
 source "/etc/openshift/node.conf"
 
 #  Import environment variables.
